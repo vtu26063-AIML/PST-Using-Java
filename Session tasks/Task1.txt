@@ -1,0 +1,112 @@
+
+
+ Task 1: Problem Analysis & Algorithm Design
+
+Problem: Student Result Management System
+
+
+ Identify Inputs and Outputs
+ Inputs:
+
+1. Student Name
+2. Student Roll Number
+3. Marks in Subject 1
+4. Marks in Subject 2
+5. Marks in Subject 3
+6. Marks in Subject 4
+7. Marks in Subject 5
+
+---
+  Outputs:
+
+1. Total Marks
+2. Average Marks
+3. Grade
+4. Result Status (Pass / Fail)
+
+---
+
+ Algorithm
+
+ Algorithm: Student Result Management System
+
+1. Start
+2. Input student name and roll number
+3. Input marks for 5 subjects
+4. Calculate total = sum of all marks
+5. Calculate average = total / 5
+6. If any subject mark < 35
+     → Result = "Fail"
+7. Else
+     → Result = "Pass"
+8. Determine grade based on average
+9. Display:
+     - Student Name
+     - Roll Number
+     - Total
+     - Average
+     - Grade
+     - Result
+10. Stop
+
+---
+
+ Flowchart
+
+You can draw this in **Draw.io** using the below structure.
+
+```
+            ┌─────────┐
+        │  Start     │
+        └────┬────┘
+               ↓
+     ┌────────────────┐
+     │ Input Details        │
+     └────┬───────────┘
+            ↓
+     ┌────────────────┐
+     │ Calculate Total      │
+     └────┬───────────┘
+            ↓
+     ┌────────────────┐
+     │ Calculate Avg        │
+     └────┬───────────┘
+            ↓
+     ┌────────────────┐
+     │ Any mark <35?  │
+     └────┬─────┬─────┘
+          │Yes         │No
+          ↓             ↓
+     ┌────────┐ ┌────────┐
+     │  Fail     │ │  Pass     │
+     └────┬───┘ └────┬───┘
+          ↓           ↓
+      ┌──────────────────┐
+      │ Assign Grade            │
+      └────┬─────────────┘
+             ↓
+      ┌──────────────────┐
+      │ Display Result          │
+      └────┬─────────────┘
+           ↓
+        ┌─────────┐
+        │  Stop      │
+        └─────────┘
+```
+
+---
+
+ Possible Test Cases
+
+| Test Case | Input Marks        | Expected Result |
+| --------- | ------------------ | --------------- |
+| TC1       | 95, 92, 90, 94, 96 | A+, Pass        |
+| TC2       | 80, 75, 78, 70, 72 | A, Pass         |
+| TC3       | 60, 65, 58, 62, 61 | B, Pass         |
+| TC4       | 40, 45, 38, 50, 42 | D, Pass         |
+| TC5       | 30, 60, 70, 80, 90 | Fail            |
+| TC6       | 35, 35, 35, 35, 35 | D, Pass         |
+| TC7       | 0, 0, 0, 0, 0      | Fail            |
+
+---
+
